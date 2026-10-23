@@ -83,6 +83,15 @@ p {
     display: flex;
     flex-direction: row;
     gap: 20px;
+
+    /* @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1020px) {
+      flex-wrap: nowrap;
+    } */
   }
 
   .block--card {
@@ -93,8 +102,17 @@ p {
     border: 1px solid #cccccc;
     border-radius: 16px;
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     background: white;
+
+    /* @media (min-width: 960px) {
+      max-width: 48%;
+    }
+
+    @media (min-width: 1020px) {
+      max-width: 100%;
+    } */
 
     .block--card__media {
       width: 100%;
