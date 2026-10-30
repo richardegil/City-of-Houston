@@ -1,3 +1,8 @@
+:root {
+  --color-light-beige: #fffeec;
+  --color-pill-background: lightgreen;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +50,7 @@ p {
     padding: 8px 12px;
     border-radius: 24px;
     color: black;
-    background: lightgreen;
+    background: var(--color-pill-background);
     line-height: 1;
   }
 }
@@ -76,7 +81,7 @@ p {
   &.block--section {
     display: flex;
     flex-direction: column;
-    background: #fffeec;
+    background: var(--color-light-beige);
     padding-inline: 12px;
   }
 
