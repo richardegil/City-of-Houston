@@ -67,7 +67,7 @@ p {
     flex-direction: column;
     gap: 24px;
 
-    @media (min-width: 768px) {
+    @media (768px <=  width) {
       padding-block: 100px;
       padding-inline: 0px;
     }
@@ -91,12 +91,12 @@ p {
     flex-direction: column;
     gap: 20px;
 
-    @media (min-width: 768px) {
+    @media (768px <=  width) {
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    @media (min-width: 1020px) {
+    @media (1020px <=  width) {
       flex-wrap: nowrap;
     }
   }
@@ -113,21 +113,27 @@ p {
     overflow: hidden;
     background: white;
 
-    @media (min-width: 960px) {
+    @media (768px <=  width) {
       max-width: 48%;
     }
 
-    @media (min-width: 1020px) {
+    @media (1020px <=  width) {
       max-width: 100%;
     }
 
     .block--card__media {
       width: 100%;
-      height: auto;
-      max-height: 100px;
+      height: 200px;
+      overflow: hidden;
+
+      @media (1020px <= width) {
+        max-height: 100px;
+        min-height: unset;
+      }
     
       img {
         object-fit: cover;
+        object-position: center;
         width: 100%;
         height: 100%;
       }
