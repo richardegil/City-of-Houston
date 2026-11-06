@@ -1,6 +1,9 @@
 :root {
   --color-light-beige: #fffeec;
+  --color-light-blue: #EBF3FC;
   --color-pill-background: lightgreen;
+  --font-meta: 'Inter', sans-serif;
+  --font-primary: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -28,9 +31,11 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--font-primary);
 
   &.eyebrow {
     font-size: 0.75rem;
+    font-family: var(--font-meta);
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
@@ -42,6 +47,7 @@ p {
 
   &.eyebrow--pill {
     font-size: 0.75rem;
+    font-family: var(--font-meta);
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
@@ -81,7 +87,7 @@ p {
   &.block--section {
     display: flex;
     flex-direction: column;
-    background: var(--color-light-beige);
+    /* background: var(--color-light-beige); */
     padding-inline: 12px;
   }
 
@@ -157,5 +163,12 @@ p {
       /* outline: 1px solid magenta; */
     }
   }
+}
+.bg--light-beige {
+  background: var(--color-light-beige);
+}
+
+.bg--light-blue {
+  background: var(--color-light-blue);
 }
 
